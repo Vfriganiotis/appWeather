@@ -1,5 +1,6 @@
 jQuery(document).ready(function ($) {
-
+   "use strict";
+ 
     var api = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat=';
 
 

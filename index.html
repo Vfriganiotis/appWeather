@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="scss/app.css">
+		<meta name="keywords" content="WeatherAPP">
+		<title>Weather App</title>
+
+		<script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript"  src="app.js"></script>
+
+
+	</head>
+
+	<body>
+
+        <!-- custom loader -->
+		<div class="se-pre-con">
+             <div class="se-pre-con-inner">
+				 <h1>umbrella APP</h1>
+			 </div>
+
+		</div>
+		<!-- end custom loader -->
+
+		<!-- side-menu  -->
+		<div class="header">
+			<div class="top-side">
+				<div class="header-top"><h1>Your Best Weather App</h1></div>
+				<ul>
+					<li><a href="#">team</a></li>
+					<li><a href="#">history</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</div>
+
+		    <div class="footer-social-icons">
+			  <h4 class="_14">Suggested to a friend</h4>
+			  <ul class="social-icons">
+				<li><a href="https://www.facebook.com" class="social-icon"> <i class="fa fa-facebook fa-lg"></i></a></li>
+				<li><a href="https://www.twitter.com" class="social-icon"> <i class="fa fa-twitter fa-lg"></i></a></li>
+				<li><a href="https://hotmail.com" class="social-icon"> <i class="fa fa-google-plus fa-lg"></i></a></li>
+			  </ul>
+		    </div>
+		</div>
+		<!-- end side-menu  -->
+
+		<!-- hamburger, app icon -->
+		<div class="hamburger-container">
+			  <button class="hamburger hamburger--collapse js-hamburger dark " type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			  </button>
+		</div>
+
+		<div class="umbrella">
+			<i class="fa fa-umbrella fa-2x" aria-hidden="true"></i>
+		</div>
+		<!-- end hamburger, app icon  -->
+
+		<!-- search view -->
+		<div class="search-template">
+			<div class="search-template-inner">
+			   <h1>type a location:</h1>
+			   <div class="input-search">
+				   <input id="autocompleteMap" class="countryInput" type="text" placeholder="Type here..."   autocomplete="on">
+				   <button id="ButtonForm" type="submit" >  <i class="fa fa-search fa-2x"></i></button>
+			   </div>
+				<h1>or give us your location</h1>
+				<button id="search"> <i class="fa fa-location-arrow fa-lg"></i> access location  </button>
+			</div>
+		</div>
+		<!-- end  search view -->
+
+		<!-- show view -->
+		<div class="show-template">
+			 <div class="favorites"> <i class="fa fa-heart fa-lg"></i> Add to Favorites</div>
+			 <div class="container ">
+			   <div class="row first-row">
+
+			   </div>
+			   <div class="row second-row">
+
+			   </div>
+			 </div>
+		 </div>
+		<!--end show view -->
+
+	</body>
+</html> 

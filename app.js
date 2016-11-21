@@ -90,6 +90,7 @@ jQuery(document).ready(function ($) {
         $('.show-template').toggleClass( 'index' );
         var getValue = $('.countryInput').val();
         var api = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=';
+        var key = '&units=metric&cnt=6&appid=341e115808d9c5c4953d759562b73015';
         var city = getValue;
         var url = api + city + key;
         var newObject = new connect(url);

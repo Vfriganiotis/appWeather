@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 
     var api = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat=';
-    var key = '&units=metric&cnt=6&appid=341e115808d9c5c4953d759562b73015';
+
 
     //init google api autocomplete
     function initializeAutocomplete() {
@@ -64,6 +64,7 @@ jQuery(document).ready(function ($) {
         function codeLatLng(lat, lng) {
             var lat = lat;
             var lng = lng;
+            var key = '&units=metric&cnt=6&appid=341e115808d9c5c4953d759562b73015';
             var fullname = api + lat + '&lon=' + lng + key;
             var newObject = new connect(fullname);
         }
